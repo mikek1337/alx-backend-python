@@ -5,8 +5,6 @@ import random
 from typing import AsyncGenerator
 
 
-
-
 async def async_generator() -> AsyncGenerator[float, None]:
     """yields a random number between 0 and 10"""
     for i in range(10):
