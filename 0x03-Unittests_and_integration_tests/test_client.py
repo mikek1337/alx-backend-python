@@ -29,5 +29,6 @@ class TestGithubOrgClient(unittest.TestCase):
         """test_public_repos_url method"""
         with patch('client.GithubOrgClient.org',
                    PropertyMock(return_value={"repos_url": "twitter"})):
+            """test_public_repos_url method"""
             test_class = GithubOrgClient("twitter")
             self.assertEqual(test_class._public_repos_url, "twitter")
